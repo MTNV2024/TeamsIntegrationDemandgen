@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Activity Configuration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Configure Notification</h2>
+    <form id="configForm">
+      <label for="webhookURL">Webhook URL:</label>
+      <input type="url" id="webhookURL" name="webhookURL" placeholder="Enter your Microsoft Teams Webhook URL" required>
+      
+      <label for="message">Notification Message:</label>
+      <input type="text" id="message" name="message" placeholder="Enter notification message (e.g., 'New lead signed up!')" required>
+
+      <button type="submit">Save Configuration</button>
+    </form>
+    <div id="statusMessage"></div>
+  </div>
+
+  <script src="configModal.js"></script>
+</body>
+</html>
