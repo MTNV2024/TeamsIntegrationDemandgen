@@ -10,7 +10,7 @@ document.getElementById('configForm').addEventListener('submit', function(event)
     return;
   }
 
-  // Simulate saving the configuration (in reality, you may want to save this in a database or to Salesforce)
+
   const configData = {
     webhookURL: webhookURL,
     message: message
